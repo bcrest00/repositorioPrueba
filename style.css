@@ -46,7 +46,7 @@ nav.controls-bar {
   //background-color: yellow;
   position: fixed; /* Set the navbar to fixed position */
   top: 50%; /* Position the navbar at the bottom of the page */
-  border: 1px solid black;
+  //border: 1px solid black;
   width: 100%;
   left: 0;
   display:grid;
