@@ -1,0 +1,65 @@
+\documentclass[12pt,a4paper,twoside]{article}
+
+\usepackage[utf8]{inputenx}
+\usepackage[T1]{fontenc}
+
+\usepackage[
+	spanish,
+	es-minimal
+]{babel}
+\unaccentedoperators
+
+
+\usepackage{lipsum}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{hyperref}
+
+\title{De LaTeX a HTML}
+\author{Nombre español}
+
+\begin{document}
+
+\maketitle
+
+\ifdefined\HCode\else
+\tableofcontents
+\fi
+
+
+\section{Matemáticas}
+
+\input{samples/maths-sample.tex}
+
+
+\section{Sección}
+
+\lipsum[1-15]
+
+\subsection{Subsección}
+
+\lipsum[1-15]
+
+\subsection{Otra subsección}
+
+\lipsum[1-15]		
+
+\section{Otra sección}
+
+\lipsum[1-15]	
+
+\section*{Otra sección no numerada}
+
+\ifdefined\HCode\else
+\addcontentsline{toc}{section}{Otra sección no numerada}
+\fi
+
+\lipsum[1-15]			
+
+\section{Una última sección}
+
+\lipsum[1-15]	
+
+\end{document}

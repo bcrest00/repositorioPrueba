@@ -1,0 +1,89 @@
+/* panel principal */
+body {
+	//background:yellow;
+    margin: auto;
+    width: 80%;
+    max-width: 80%;
+    font-size:120%;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens:auto;
+}
+
+
+
+/* panel toc */
+body#tex4ht-menu {
+	background: #F4F4F4;
+	max-width: 70%;
+	font-size:100%;
+	white-space: normal;
+}
+
+
+//body#tex4ht-main {
+//	background:green;
+//}
+
+nav.breadcrumbs-bar {
+  text-align: center;
+  overflow: hidden;
+  background-color: #F4F4F4;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  left: 0;
+  border: 1px solid black;
+  height: 2em;
+  line-height: 2em;// centrar texto verticalmente
+  //font-size:100%;	
+}
+
+
+
+nav.controls-bar {
+  overflow: hidden;
+  //background-color: yellow;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 50%; /* Position the navbar at the bottom of the page */
+  border: 1px solid black;
+  width: 100%;
+  left: 0;
+  display:grid;
+  grid-template-columns: 10% 80% 10%;
+  justify-items: center;
+}
+
+nav.controls-bar nav.prev {
+  border: 1px solid black;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  font-size:200%;
+}
+
+
+nav.controls-bar nav.next {
+  border: 1px solid black;
+  grid-column: 3;
+  font-size:200%;
+}
+
+
+nav.controls-bar a:hover{
+	color: gray;
+	text-decoration: none;
+}
+
+/* links */
+a:link{
+	color: #005AA0;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #005AA0;
+}
+
+a:hover {
+	text-decoration: underline;
+}
